@@ -1,9 +1,11 @@
-package com.grabber;
+package com.downloader;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.grabber.EmailSearcher;
 
 public class Downloader {
 
@@ -18,13 +20,15 @@ public class Downloader {
                 + "[\\p{Alnum}.,%_=?&#\\-+()\\[\\]\\*$~@!:/{};']*)",Pattern.CASE_INSENSITIVE);
 
 		String response = "";
-		String url = "https://cybereasy.site";
+		String url = "https://aps-site.ru/";
 //		-----------------
 		
 		response = c.getHTML(url);
 //		System.out.println(response);
 		
 		
+//		com.grabber.EmailSearcher.emailSearcher(response);
+//		EmailSearcher.printEmail();
 		
         Matcher m = p.matcher(response);
         while (m.find()) {

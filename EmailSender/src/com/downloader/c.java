@@ -1,4 +1,4 @@
-package com.grabber;
+package com.downloader;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
