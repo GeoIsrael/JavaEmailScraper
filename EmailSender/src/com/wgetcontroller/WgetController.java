@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 public class WgetController {
 
 	public static void main(String[] args) {
-//        String cmd = "cd /home/g/input/WGET/";  //| wget https://www.nbn.org.il";
-		String cmd = "wget -r -l10 https://www.nbn.org.il";
+        String cmd = "ls -a";  //| wget https://www.nbn.org.il";
+//		String cmd = "wget -r -l10 https://www.nbn.org.il";
 		String s;
         Process p;
  
