@@ -63,13 +63,6 @@ public class EmailSearcher {
 				}
 
 			
-		
-			for(String email: emails) {
-//				System.out.println(email);
-				count ++;
-			}
-//			System.out.println("Total email: " + count);
-			
 			return true;
 
 			

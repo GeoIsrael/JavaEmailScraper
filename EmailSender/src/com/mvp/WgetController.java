@@ -1,4 +1,4 @@
-package com.wgetcontroller;
+package com.mvp;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,8 +7,13 @@ import java.io.InputStreamReader;
 public class WgetController {
 
 	public static void main(String[] args) {
-        String cmd = "ls -a";  //| wget https://www.nbn.org.il";
-//		String cmd = "wget -r -l10 https://www.nbn.org.il";
+//target
+		String target = "cybereasy.site";
+
+//command
+		String cmd = "wget -c -r -l100 --progress=dot " + target; 				// + " -O 1";
+
+		
 		String s;
         Process p;
  
@@ -34,4 +39,12 @@ public class WgetController {
 
 	}
 
+
+//Console console = System.console();
+//if (console == null) {
+//    System.out.println("Unable to fetch console");
+//    return;
+//}
+//String line = console.readLine();
+//console.printf("I saw this line: %s", line);
 

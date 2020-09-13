@@ -28,9 +28,13 @@ public class WalkerRec {
 			EmailSearcher.emailSearcher(path.toString());
 		}
 		
+		EmailSearcher.printEmail();
+		
 		System.out.println("Total email: " + EmailSearcher.showCount());
 		
-		EmailSearcher.printEmail();
+		
+	
+		
 	}
 }	
 
